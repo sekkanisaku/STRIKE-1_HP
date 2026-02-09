@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaGear STRIKE-1 | 次世代のエントリーFPSマウス</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">NovaGear</div>
+    <nav class="nav-links">
+        <a href="#features">特徴</a>
+        <a href="#specs">スペック</a>
+        <a href="#" class="buy-btn">今すぐ購入</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-split-container">
+
+        <div class="hero-left">
+            <div class="image-container-large">
+                <img src="strike-1_3color.png" id="main-mouse-image" alt="STRIKE-1">
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="product-Header">
+                <h1>STRIKE-1</h1>
+                <p class="catchphrase">意のままに滑り、狙い通りに止まる。</p>
+            </div>
+
+            <div class="color-selector-panel">
+                <p class="selector-label">Choose Your Style</p>
+                <div class="color-dots" onmouseleave="resetColor()">
+                    <div class="dot color-dot black active" onmouseover="changeColor('black', 'Shadow Black')"></div>
+                    <div class="dot color-dot white" onmouseover="changeColor('white', 'Polar White')"></div>
+                    <div class="dot color-dot blue" onmouseover="changeColor('blue', 'Nova Blue')"></div>
+                </div>
+                <h3 id="current-color-name">Shadow Black</h3>
+            </div>
+
+            <div class="purchase-action">
+                <p class="price">¥7,980 <span class="tax">(税込)</span></p>
+                <button class="hero-buy-btn large-btn">今すぐ購入</button>
+            </div>
+
+            <div class="mini-specs">
+                <h4>Quick Specs</h4>
+                <ul>
+                    <li><span>重量:</span> 62g (超軽量)</li>
+                    <li><span>センサー:</span> 16,000 DPI 光学式</li>
+                    <li><span>接続:</span> 超低遅延ワイヤレス</li>
+                    <li><span>電池:</span> 最大70時間</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="features" class="features">
+    <div class="feature-card">
+        <h3>Zero-Friction ソール</h3>
+        <p>摩擦を感じさせない究極の滑り出し。初動の遅れをゼロにします。</p>
+    </div>
+    <div class="feature-card">
+        <h3>ハイブリッド・グリップ</h3>
+        <p>特殊ラバーが指先にフィット。激しい操作でもピタッと止まります。</p>
+    </div>
+    <div class="feature-card">
+        <h3>日本人の手にフィット</h3>
+        <p>1000人のデータを元に設計。握った瞬間、手の一部になります。</p>
+    </div>
+</section>
+
+<section id="specs" class="specs">
+    <h2 style="text-align: center;">スペック</h2>
+    <table>
+        <tr><th>重量</th><td>62g (超軽量設計)</td></tr>
+        <tr><th>センサー</th><td>16,000 DPI 光学式</td></tr>
+        <tr><th>接続</th><td>超低遅延ワイヤレス</td></tr>
+        <tr><th>電池</th><td>最大70時間持続</td></tr>
+        <tr><th>価格</th><td>7,980円 (税込)</td></tr>
+    </table>
+</section>
+
+<footer>
+    &copy; 2026 NovaGear Gaming. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
