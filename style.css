@@ -156,7 +156,7 @@ header {
 }
 
 .dot.all-colors {
-    background: linear-gradient(45deg, #1a1a1a, #ffffff, #003366, #dc143c);
+    background: linear-gradient(45deg, #1a1a1a, #ffffff, #003366,);
     border: 1px solid rgba(255,255,255,0.3);
 }
 
