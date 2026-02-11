@@ -34,12 +34,14 @@
 
             <div class="color-selector-panel">
                 <p class="selector-label">Choose Your Style</p>
-                <div class="color-dots" onmouseleave="resetColor()">
-                    <div class="dot color-dot black active" onmouseover="changeColor('black', 'Shadow Black')"></div>
-                    <div class="dot color-dot white" onmouseover="changeColor('white', 'Polar White')"></div>
-                    <div class="dot color-dot blue" onmouseover="changeColor('blue', 'Nova Blue')"></div>
+                <div class="color-dots">
+                    <div class="dot all-colors active" onclick="changeColor('all', this)"></div>
+        
+                    <div class="dot black" onclick="changeColor('black', this)"></div>
+                    <div class="dot white" onclick="changeColor('white', this)"></div>
+                    <div class="dot blue" onclick="changeColor('blue', this)"></div>
                 </div>
-                <h3 id="current-color-name">Shadow Black</h3>
+                <h3 id="current-color-name">STRIKE-1 Full Lineup</h3>
             </div>
 
             <div class="purchase-action">
