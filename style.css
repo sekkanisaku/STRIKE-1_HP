@@ -154,6 +154,16 @@ header {
     border: 2px solid transparent;
     transition: transform 0.2s, border-color 0.2s;
 }
+/* 全色表示用ドット
+.dot.all-colors {
+    background: linear-gradient(45deg, #1a1a1a, #ffffff, #003366, #dc143c);
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* クリックした時の「指マーク」を徹底 */
+.dot {
+    cursor: pointer;
+}
 .dot.black { background: #1a1a1a; }
 .dot.white { background: #ffffff; }
 .dot.blue  { background: #003366; }
