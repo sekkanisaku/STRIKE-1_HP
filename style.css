@@ -91,14 +91,31 @@ header {
 }
 
 .image-container-large {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    max-width: 800px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* 画像を表示する親要素（箱）のサイズを固定する */
+.image-display-area { 
+    width: 100%;
+    height: 800px; /* ここで「箱」の高さを好みの数値で固定 */
+    display: flex;
+    align-items: center; /* 縦方向の中央寄せ */
+    justify-content: center; /* 横方向の中央寄せ */
+    background-color: transparent; /* 背景を透明に（必要なら背景色を） */
+    overflow: hidden; /* 万が一はみ出しても隠す */
 }
 
 #main-mouse-image {
-    width: 110%;
+    width: auto;
     height: auto;
     object-fit: contain;
+    max-height: 100%;
+    max-width: 110%;
     transform: translateX(-20px);
     filter: drop-shadow(0 0 50px rgba(0, 242, 255, 0.3));
 }
@@ -164,9 +181,9 @@ header {
 .dot {
     cursor: pointer;
 }
-.dot.black { background: #1a1a1a; }
+.dot.black { background: #1a1a1a; border: 1px solid rgba(255, 255, 255, 0.3); }
 .dot.white { background: #ffffff; }
-.dot.blue  { background: #003366; }
+.dot.blue  { background: #003366; border: 1px solid rgba(255, 255, 255, 0.3); }
 .dot.active { border-color: var(--accent-color); transform: scale(1.2); }
 .dot:hover { transform: scale(1.3); border: 2px solid var(--accent-color); }
 
