@@ -48,7 +48,12 @@ header {
 
 .nav-links a:hover { color: var(--accent-color); }
 
-.buy-btn {
+.buy-button {
+    display: inline-block; /* これがないとpaddingなどが正しく効きません */
+    text-decoration: none; /* リンクの下線を消します */
+    text-align: center;    /* 文字を中央揃えにします */
+    cursor: pointer;       /* カーソルを指マークにします */
+    border: none;          /* buttonタグだった場合の枠線を消します */
     background: var(--accent-color);
     color: #000;
     padding: 8px 18px;
@@ -57,6 +62,16 @@ header {
     font-size: 0.85rem;
     text-decoration: none;
     animation: pulse 2s infinite;
+}
+
+/* ホバー時（マウスを乗せた時）のデザイン */
+.buy-button:hover {
+    filter: brightness(1.1); /* 少しだけ明るくする（または直接色を指定してもOK） */
+}
+
+/* クリック時（押した瞬間）のデザイン */
+.buy-button:active {
+    transform: scale(0.98); /* 少しだけ凹むような演出 */
 }
 
 /* --- Hero Section (2カラム構成) --- */
